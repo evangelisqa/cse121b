@@ -1,6 +1,7 @@
 /* W02-Task - Profile Home Page */
 
 /* Step 1 - Setup type tasks - no code required */
+let fullname = "Evangelis Albesa";
 
 /* Step 2 - Variables */
 
