@@ -15,6 +15,9 @@ const yearElement = document.querySelector("#year");
 const imageElement = document.getElementById("prof");
 
 /* Step 4 - Adding Content */
+nameElement.innerHTML = "<strong>${fullName}</strong>";
+nameElement.textContent = currentYear;
+imageElement.setAttribute("scr", profilePicture);
 
 
 
