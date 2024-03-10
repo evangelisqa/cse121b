@@ -2,6 +2,8 @@
 
 /* Step 1 - Setup type tasks - no code required */
 let fullname = "Evangelis Albesa";
+let currentYear =  "2024";
+let profilePicture = "images/jpeg"
 
 /* Step 2 - Variables */
 
