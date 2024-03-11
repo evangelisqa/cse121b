@@ -21,9 +21,13 @@ imageElement.setAttribute("scr", profilePicture);
 imageElement.setAttribute("alt", "Profile image of $ {NameVariable}");
 
 /* Step 5 - Array */
-const favoriteFoods = ["lechon", "bulalo", "fried chicken", "salad", "banana"];
-<p id = "food"></p>
-const favoriteFoods = "bulalo";
+const favFoods = ["bulalo", "fried chicken", "salad", "banana"];
+document.getElementById("food")
+const faFoods = 'salad';
+favoriteFoods.push(favFoods);
+foodElement.innerHTML +='<br>${"favFoods}';
+foodElement.innerHTML += food +"<br>";
+
 
 
 
