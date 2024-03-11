@@ -4,8 +4,13 @@
 
 
 /* Step 2 - Variables */
+/* Declare and instantiate a variable to hold your name. Identify the variable as "fullName".*/
 let fullname = 'Evangelis Albesa';
-let currentYear =  new Date().getFullYear();
+
+/* Declare and instantiate a variable to hold the current year.*/
+let currentYear =  new Date().getFullYear(); 
+
+/*Declare and instantiate a variable to hold the file path (location) and file name of the image that you placed in the images folder as a string. Identify the variable as "profilePicture".*/
 let profilePicture = "images/profile.png";
 
 /* Step 3 - Element Variables */
@@ -18,7 +23,7 @@ const imageElement = document.querySelector('profile');
 nameElement.innerHTML = "<strong>Evangelis Albesa</strong>";
 yearElement.textContent = currentYear;
 imageElement.setAttribute("src", profilePicture);
-imageElement.setAttribute("alt", `Profile image of ${fullName}`);
+imageElement.setAttribute("alt", `Profile image of ${fullname}`);
 
 
 /* Step 5 - Array */
