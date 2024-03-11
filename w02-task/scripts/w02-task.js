@@ -18,13 +18,12 @@ const imageElement = document.getElementById("prof");
 nameElement.innerHTML = "<strong>${fullName}</strong>";
 nameElement.textContent = currentYear;
 imageElement.setAttribute("scr", profilePicture);
-
-
-
-
-
+imageElement.setAttribute("alt", "Profile image of $ {NameVariable}");
 
 /* Step 5 - Array */
+const favoriteFoods = ["lechon", "bulalo", "fried chicken", "salad", "banana"];
+<p id = "food"></p>
+const favoriteFoods = "bulalo";
 
 
 
