@@ -1,4 +1,4 @@
-/* W02-Task - Profile Home Page */
+/* W02-Task - Evangelis */
 
 /* Step 1 - Setup type tasks - no code required */
 
