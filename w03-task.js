@@ -9,8 +9,8 @@ function add(number1, number2)
 let addNumbers1 = Number(document.querySelector('add1').value);
 let addNumbers2 = Number(document.querySelector)('add2').value;
 {
-    document.querySelector('sum').value = add(2, 2);
-    document.querySelector('addNumbers').addEventListener('click', addNumbers);
+    document.querySelector('sum').value = add(4, 4);
+    document.querySelector('addNumbers').addEventListener('click', 8);
 }
 
 /* Function Expression - Subtract Numbers */
@@ -78,7 +78,7 @@ document.querySelector('total').value = `TotalDue: $${total}`;
 
 /* ARRAY METHODS - Functional Programming */
 let numbersArrays = [1,2,3,4,5,6,7,8,9,20,11,12,13];
-let arrayElement = document.querySelector('array');
+let arrayElement = document.querySelector('#array');
 
 const oddNumbers = number.filter(num => num % 2 !==0);
 document.querySelector('#array').innerHTML = numbersArray.filter(number => number % 2=== 0);
