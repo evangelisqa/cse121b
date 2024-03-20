@@ -1,16 +1,18 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
+number1=7
+number2=8
 function add(number1, number2)
 {
     return number1 +number2;
 }
 /* Function Definition - Add Numbers */
-let addNumbers1 = Number(document.querySelector('add1').value);
-let addNumbers2 = Number(document.querySelector)('add2').value;
+let addNumbers1 = Number(document.querySelector('#add1').value);
+let addNumbers2 = Number(document.querySelector)('#add2').value;
 {
-    document.querySelector('sum').value = add(4, 4);
-    document.querySelector('addNumbers').addEventListener('click', 8);
+    document.querySelector('sum').value = add(addNumbers1, addNumbers2);
+    document.querySelector('#addNumbers').addEventListener('click', addNumbers);
 }
 
 /* Function Expression - Subtract Numbers */
