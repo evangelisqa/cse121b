@@ -1,19 +1,16 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
-number1=7
-number2=8
-function add(number1, number2)
+function add(a, b)
 {
-    return number1 +number2;
+    return a + b;
 }
 /* Function Definition - Add Numbers */
-let addNumbers1 = Number(document.querySelector('#add1').value);
-let addNumbers2 = Number(document.querySelector)('#add2').value;
-{
-    document.querySelector('sum').value = add(addNumbers1, addNumbers2);
-    document.querySelector('#addNumbers').addEventListener('click', addNumbers);
-}
+const number1 = 7;
+const number2 = 8;
+const Sum = addNumbers(number1, number2);
+console.log(`sum of ${number1} and ${number2} is ${sum}`);
+
 
 /* Function Expression - Subtract Numbers */
 function subtract(subtract1, subtract2)
@@ -80,24 +77,28 @@ document.querySelector('total').value = `TotalDue: $${total}`;
 
 /* ARRAY METHODS - Functional Programming */
 let numbersArrays = [1,2,3,4,5,6,7,8,9,20,11,12,13];
-let arrayElement = document.querySelector('#array');
-
-const oddNumbers = number.filter(num => num % 2 !==0);
-document.querySelector('#array').innerHTML = numbersArray.filter(number => number % 2=== 0);
-numbersArray.reduce((sum, number) => sum + number)
-const multipliedNumbers = numbers.map(num => num *2);
-
-const sumOfMultiplied = multipliedNumbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-document.querySelector('sumOfMultiplied').textContent = `Sum of multiplied Arrays: ${sumOfMultiplied}`;
 
 /* Output Source Array */
-
+const array = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+console.log(array);
 /* Output Odds Only Array */
+const oddOnly = array.filter(number => number % 2 !== 0);
+console.log(oddsOnly);
 
 /* Output Evens Only Array */
+const evensOnly = array.filter(number => number % 2=== 0);
+console.log (evensOnly);
+
 
 /* Output Sum of Org. Array */
-
+numbersArray.reduce((sum, number) => sum + number)
+console.log(`sum of the array: ${sum}`);
 /* Output Multiplied by 2 Array */
+const multipliedBy2 = array.map(number => number * 2);
+console.log(multipliedBy2);
 
 /* Output Sum of Multiplied by 2 Array */
+const sum = multipliedBy2.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(`sum of the multiplied by 2 array: ${sum}`);
+
