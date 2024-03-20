@@ -1,30 +1,28 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
-function add(a, b)
+function add(number1, number2)
 {
-    return a + b;
+    return number1 +number2;
 }
 /* Function Definition - Add Numbers */
-const number1 = 7;
-const number2 = 8;
-const Sum = addNumbers(number1, number2);
-console.log(`sum of ${number1} and ${number2} is ${sum}`);
+let addNumbers1 = Number(document.querySelector('#add1').value);
+let addNumbers2 = Number(document.querySelector)('#add2').value;
+{
+    document.querySelector('sum').value = add(addNumbers1, addNumbers2);
+    document.querySelector('#addNumbers').addEventListener('click', addNumbers);
+}
 
 
 /* Function Expression - Subtract Numbers */
-function subtract(subtract1, subtract2)
-{
+function subtract( subtract1,  subtract2)
+{ 
     return subtract1 - subtract2;
-}
-
+};
 let subtractNumbers1 = Number(document.querySelector('subtract1').value);
 let subtractNumbers2 = Number(document.querySelector('subtract2').value);
-{
-    document.querySelector('difference').value = subtract(subtractNumbers1, subtractNumber2);
-    document.querySelector('subtractNumbers').subtractEvenListener('click', subtractNumbers);
-}
 
+document.querySelector('difference').value = subtract(subtractNumbers1, subtractNumber2);
 
 /* Arrow Function - Multiply Numbers */
 function arrow(factor1, factor2)
@@ -33,10 +31,10 @@ function arrow(factor1, factor2)
 }
 let multipyNumbers1 = Number(document.querySelector('factor1').value);
 let multipyNumbers2 = Number(document.querySelector('factor2').value);
-{
-    document.querySelector('product').value = multiply(multipyNumbers1, multiplyNumber2);
-    document.querySelector('multiplyNumbers').multiplyEvenListener('click', multiplyNumber);
-}
+
+document.querySelector('product').value = multiply(multipyNumbers1, multiplyNumber2);
+document.querySelector('multiplyNumbers').multiplyEvenListener('click', multiplyNumber);
+
 
 /* Open Function Use - Divide Numbers */
 function divide  (dividend, divisor)
@@ -45,10 +43,10 @@ function divide  (dividend, divisor)
 }
 let divideNumber1 = Number(document.querySelector('dividend').value);
 let divideNumber2 = Number(document.querySelector('divisor').value );
-{
+
     document.querySelector('quotient').value = divide(dividend, divisor);
     document.querySelector('divideNumber').divideEvenListener('click', divideNumber);
-}
+
 
 
 /* Decision Structure */
