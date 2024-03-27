@@ -1,6 +1,27 @@
 /* LESSON 3 - Programming Tasks */
 
+/* LESSON 3 - Programming Tasks */
+
 /* FUNCTIONS */
+/* Function Definition - Add Numbers */
+function add(number1, number2) {
+    const sum = number1 + number2;
+    return sum;
+  }
+  function addNumbers() {
+    let addNumber1 = Number(document.querySelector("#add1").value);
+    let addNumber2 = Number(document.querySelector("#add2").value);
+    const sum = add(addNumber1, addNumber2);
+    document.querySelector("#sum").value = sum;
+  }
+  const element = document.querySelector("#addNumbers");
+  element.addEventListener("click", addNumbers);
+  /* Function Expression - Subtract Numbers */
+  function subtract(number1, number2) {
+    const difference = number1 - number2;
+    return difference;
+  }/* FUNCTIONS */
+
 
 function subtractNumbers() {
     let subtractNumber1 = Number(document.querySelector("#subtract1").value);
@@ -37,10 +58,32 @@ const multiplyNumbers = () => {
 const dividingElement = document.querySelector("#divideNumbers");
   dividingElement.addEventListener("click", divideNumbers);
   /* Decision Structure */
+
   let today = new Date();
   let currentYear = "";
   currentYear = today.getFullYear();
   document.getElementById("year").textContent = currentYear;
+
+  /*   */
+  /* Decision Structure */
+function calculateTotal() {
+    let subtotal = Number(document.getElementById("subtotal").value);
+    let discountApplied = document.getElementById("member").checked;
+    let total;
+  
+    if (discountApplied) {
+      total = subtotal * 0.8; // Applying 20% discount
+    } else {
+      total = subtotal;
+    }
+  
+    document.getElementById("total").textContent = "$" + total.toFixed(2);
+  }
+  
+  const getTotalButton = document.getElementById("getTotal");
+  getTotalButton.addEventListener("click", calculateTotal);
+/* */
+  
 /* ARRAY METHODS - Functional Programming */
   /* Output Source Array */
   var numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
