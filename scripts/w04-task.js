@@ -43,7 +43,7 @@ document.querySelector("#name").textContent = myProfile.name;
 
 /* Photo with attributes */
 document.querySelector("#photo").src = myProfile.photo;
-document.querySelector("p#hoto").alt = myProfile.name;
+document.querySelector("#hoto").alt = myProfile.name;
 
 /* Favorite Foods List*/
 document.querySelector("f#avorite-foods").textContent = myProfile;
