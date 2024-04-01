@@ -16,6 +16,7 @@ function add(number1, number2) {
   }
   const element = document.querySelector("#addNumbers");
   element.addEventListener("click", addNumbers);
+
   /* Function Expression - Subtract Numbers */
   function subtract(number1, number2) {
     const difference = number1 - number2;
@@ -112,43 +113,5 @@ function calculateTotal() {
     (sum, number) => sum + number
   );
 
-
-
-/* Function Definition - Add Numbers */
-
-
-/* Function Expression - Subtract Numbers */
-
-
-/* Arrow Function - Multiply Numbers */
-
-/* Open Function Use - Divide Numbers */
-
-
-/* Decision Structure */
-
-
-// membership checkbox
-
-
-/* ARRAY METHODS - Functional Programming */
-
-
-/* Output Source Array */
-
-
-/* Output Odds Only Array */
-
-
-/* Output Evens Only Array */
-
-
-
-/* Output Sum of Org. Array */
-
-/* Output Multiplied by 2 Array */
-
-
-/* Output Sum of Multiplied by 2 Array */
 
 
