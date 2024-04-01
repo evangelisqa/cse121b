@@ -1,29 +1,33 @@
 /* LESSON 3 - Programming Tasks */
 
 /* Profile Object  */
-let myProfile = {};
 let myProfile = {
-    name: "Evangelis Albesa",
-    photo: "profile.png",
-    favoriteFoods: ["Bulalo", "Sinigang", "Salad"],
-    hobbies: ["Exploring", "Hiking", "Reading", "Photography"],
+    name: 'Evangelis Albesa',
+    photo: 'images/prof.png',
+    favoriteFoods:  ['Bulalo',
+    'Sinigang',
+      'Salad'],
+    hobbies: [
+    'Exploring', 
+    'Hiking',
+    'Reading', 
+    'Photography'],
+
     placesLived:(
         {
             place: "British Columbia",
             length: "2 years"
         },
-        {
-            place: "Sakatchewan",
-            length: "8 years",
+        {   
+            place: "Regina",
+            length: "8 years"
         },
         {
-            place: "Calgary",
-            length: "2 Years"
+            place: "Vancouver",
+            length: "2 years"
         }
-        
     )
 };
-
 
 
 
@@ -32,20 +36,22 @@ let myProfile = {
 
 
 /* DOM Manipulation - Output */
-document.querySelector("#name").textContent = myProfile.name;
-document.querySelector("photo").src = myProfile.photo;
-document.querySelector("photo").alt = myProfile.name;
+
 
 /* Name */
+document.querySelector("#name").textContent = myProfile.name;
 
 /* Photo with attributes */
-
+document.querySelector("#photo").src = myProfile.photo;
+document.querySelector("p#hoto").alt = myProfile.name;
 
 /* Favorite Foods List*/
+document.querySelector("f#avorite-foods").textContent = myProfile;
 myProfile.favoriteFoods.forEach(food => {
-    let li = document.createElement("li");
-    li.textContent = food;
-    document.querySelector("#favorite-foods").appendChild(li);
+    let listItem = document.createElement("li");
+    listItem.textContent = food;
+    favoriteFoodsList.appendChild(listItem);
+   
 });
 
 
@@ -54,7 +60,7 @@ myProfile.hobbies.forEach(hobby =>
 {
     let li = document.createElement("li");
     li.textContent = hobby;
-    document.querySelector("#hobbiestList").appendChild(li);
+    document.querySelector("#hobbieslist").appendChild(li);
 });
 
 
@@ -70,5 +76,3 @@ myProfile.placesLived.forEach(place =>{
     dl.appendChild(dt);
     dl.appendChild(dd);
 })
-
-
