@@ -1,6 +1,6 @@
 /* Profile Object  */
 let myProfile = {  
-    name: 'Example',
+    name: 'Evangelis Albesa',
     photo: 'Example',
     favoriteFoods: ['Pizza', 'adobo chicken', 'Chicken tinola', 'Pasta'],
     hobbies: ['Games', 'Web Design', 'Movies', 'Studying Scriptures', 'Playing instrument'],
