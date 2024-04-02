@@ -10,13 +10,17 @@ let myProfile = {
   /* Populate Profile Object with placesLive objects */
     
   myProfile.placesLived.push({
-    place: 'Us',
-    length: '400 ye ars'
+    place: 'Saskatchewan',
+    length: '8 years'
   });
   myProfile.placesLived.push({
-    place: 'US',
-    length: 'immortal'
+    place: 'Alberta',
+    length: '2vyears'
   });
+  myProfile.placesLived.push({
+    place: 'British Columbia',
+    length: '2 years'
+  })
   
   
   /* DOM Manipulation - Output */
