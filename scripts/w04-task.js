@@ -1,7 +1,7 @@
 /* Profile Object  */
 let myProfile = {  
     name: 'Evangelis Albesa',
-    photo: 'Example',
+    photo: 'images/prof.png',
     favoriteFoods: ['Bulalo', 'adobo chicken', 'Chicken tinola'],
     hobbies: ['Web Design', 'Drawing', 'Studying Scriptures', 'Travelling'],
     placesLived: []
