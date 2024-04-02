@@ -2,8 +2,8 @@
 let myProfile = {  
     name: 'Evangelis Albesa',
     photo: 'Example',
-    favoriteFoods: ['Pizza', 'adobo chicken', 'Chicken tinola', 'Pasta'],
-    hobbies: ['Games', 'Web Design', 'Movies', 'Studying Scriptures', 'Playing instrument'],
+    favoriteFoods: ['Bulalo', 'adobo chicken', 'Chicken tinola'],
+    hobbies: ['Web Design', 'Drawing', 'Studying Scriptures', 'Travelling'],
     placesLived: []
     };
   
