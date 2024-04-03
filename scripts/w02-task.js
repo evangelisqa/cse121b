@@ -8,21 +8,21 @@
 let fullname = 'Evangelis Albesa';
 
 /* Declare and instantiate a variable to hold the current year.*/
-const currentYear = "2024"
+const currentYear = "2024";
 
 /*Declare and instantiate a variable to hold the file path (location) and file name of the image that you placed in the images folder as a string. Identify the variable as "profilePicture".*/
-let profilePicture = "images/profile.png";
+let profilePicture = "images/prof.png";
 
 /* Step 3 - Element Variables */
-const nameElement = document.getElementById('name');
-const foodElement = document.getElementById('food');
+const nameElement = document.getElementById('#name');
+const foodElement = document.getElementById('#food');
 const yearElement = document.querySelector('#year');
 const imageElement = document.querySelector('profile');
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>Evangelis Albesa</strong>`;
 yearElement.textContent = currentYear;
-imageElement.setAttribute("src", image/profilePicture.png);
+imageElement.setAttribute("src", image/prof.png);
 imageElement.setAttribute("alt", `Profile image of ${fullname}`);
 
 
