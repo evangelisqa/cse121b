@@ -87,6 +87,4 @@ filterTemples(templeName);
     });
 
 
-
-
 /* Event Listener */
