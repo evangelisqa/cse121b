@@ -85,6 +85,6 @@ filterTemples(templeName);
     filteredElement.addEventListener("change", () => {
         filterTemples(templeList);
     });
-
+getTemples();
 
 /* Event Listener */
