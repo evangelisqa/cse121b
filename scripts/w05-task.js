@@ -54,7 +54,7 @@ const getTemples = async () => {
 /* reset Function */
 // Declare a function expression named reset that clears all of the <article> elements from the templesElement.
 const reset = () => {
-// Clean all <article> elements from the templesElement
+// Remove all <article> elements from the templesElement
     templesElement.innerHTML = "";
   };
 
