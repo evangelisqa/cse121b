@@ -32,10 +32,12 @@ const displayTemples = (temples) => {
 };
 
 /* async displayTemples Function */
+
     // Create another function expression called getTemples. Make it an async anonymou, arrow function.
 const getTemples = async () => {
 
 /* async getTemples Function using fetch()*/
+
     // In the function, declare a const variable named response that awaits the built-in fetch method calling the temple data, absolute URL given in Step 2 above.
     const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
     
@@ -52,9 +54,10 @@ const getTemples = async () => {
 
 
 /* reset Function */
-// Declare a function expression named reset that clears all of the <article> elements from the templesElement.
+
+    // Declare a function expression named reset that clears all of the <article> elements from the templesElement.
 const reset = () => {
-// Remove all <article> elements from the templesElement
+    // Remove all <article> elements from the templesElement
     templesElement.innerHTML = "";
   };
 
