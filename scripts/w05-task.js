@@ -1,6 +1,7 @@
 /* W05: Programming Tasks */
 
 /* Declare and initialize global variables */
+
 /* W05: Programming Tasks */
 
 /* Declare and initialize global variables */
