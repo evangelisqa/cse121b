@@ -1,4 +1,5 @@
 
+
 // Function to fetch weather data frpm the API
 async function getWeather(){
     
@@ -6,6 +7,16 @@ async function getWeather(){
 // Replace with actual API key
     const location = document.getElementById('locationInput').Value;
     const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}`;
+
+    if (weatherCondition ==='Clear'){
+        // Display sunny weather information
+    }
+    else if (weatherCondition === 'Rainy')
+    {
+        // Display rainy weather information
+    } else {
+        // Handle other condition
+    }
 
     try{
         const response = await fetch(apiUrl);
@@ -22,5 +33,6 @@ async function getWeather(){
     } catch (error) {
         console.error ('Error fetching data:', error);
     }
+    
 
 }
