@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link = <script scr = "project.js"></script>
+    <title>Project | CSE 121b | Weather Forecast App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/project.css">
 </head>
 <body>
-    <h1 style = "text-align: center; background: #fde2e4; font-size: extra-large;">Weather App</h1>
-    <input type="text" id = "locationInput"
-    placeholder = "Enter a City" style = "display: block; margin: 0 auto; background: wheat; font-size:larger;">
-    <button onclick = "getWeather()" style = "display: block; margin: 0 auto; background: yellow; font-size: large;">Get Weather</button>
-    <div id = "weatherDisplay" style = "text-align: center;"></div>
-
-    <script scr = "project.js"></script>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Weather Forecast App</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="weather-info"></div>
+    </div>
+    <script src="scripts/project.js"></script>
+    <footer>
+        &copy;<span id="year"></span> | Project | CSE 121b
+    </footer>
 </body>
 </html>

@@ -1,38 +1,44 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const cityInput = document.getElementById('city-input');
+    const searchBtn = document.getElementById('search-btn');
+    const weatherInfo = document.getElementById('weather-info');
 
+    searchBtn.addEventListener('click', () => {
+        const cityName = cityInput.value.trim();
+        if (cityName !== '') {
+            getWeather(cityName);
+        } else {
+            alert('Please enter a city name.');
+        }
+    });
 
-// Function to fetch weather data frpm the API
-async function getWeather(){
-    
-    const apiKey = "82e58c1d66e46c56eb606842b7fd086d";
-// Replace with actual API key
-    const location = document.getElementById('locationInput').Value;
-    const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}`;
-
-    if (weatherCondition ==='Clear'){
-        // Display sunny weather information
+    async function getWeather(city) {
+        try {
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7f2db73c55d04a213c449b93e2df1ab8&units=metric`);
+            const data = await response.json();
+            if (data.cod === 200) {
+                displayWeather(data);
+            } else {
+                alert('City not found. Please enter a valid city name.');
+            }
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+            alert('An error occurred while fetching weather data. Please try again later.');
+        }
     }
-    else if (weatherCondition === 'Rainy')
-    {
-        // Display rainy weather information
-    } else {
-        // Handle other condition
+
+    function displayWeather(data) {
+        const weatherHTML = `
+            <div class="weather-card">
+                <h2>${data.name}, ${data.sys.country}</h2>
+                <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
+                <p class="weather-description">${data.weather[0].description}</p>
+                <p>Temperature: ${data.main.temp} °C</p>
+                <p>Feels like: ${data.main.feels_like} °C</p>
+                <p>Humidity: ${data.main.humidity} %</p>
+                <p>Wind Speed: ${data.wind.speed} m/s</p>
+            </div>
+        `;
+        weatherInfo.innerHTML = weatherHTML;
     }
-
-    try{
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-// Extract relevant weather data
-        const temperature = Math.round(data.main.temp - 273.15);
-
-// Convert to Celcius        const condition = data.weather[0].description;
-
-        const weatherMeassage = `Today's weather in ${location}: ${condition}. zthe temperature is ${temperature}°C`;
-// Display weather information
-        console.log(weatherMessage);
-
-    } catch (error) {
-        console.error ('Error fetching data:', error);
-    }
-    
-
-}
+});
