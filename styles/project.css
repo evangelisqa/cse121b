@@ -8,6 +8,6 @@ div .search-container {
 search .button{
     background: red;
 }
-msg .weather-info{
+div {
     text-align: center;
 }
